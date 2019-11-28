@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Primera Pagina Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="simple-sidebar.css">
+
+    <title>Document</title>
 </head>
 <body>
-
-    <h1>Hola Mundo</h1>
+    <div class="d-flex toggled" id="wrapper">
+            <div class="bg-success" id="barra">
+                    <div>inicio</div>
+                    <div>settings</div>
+                    <div>about</div>
+            </div>
+            <div class="page-content-wrapper" id="pa">
+              <div class="row-group" id="bot">
+                <button class="btn btn-danger col mb-2" id="menu-toggle">pe</button>
+                <button class="btn btn-info col mb-2" id="eder">
+                    <i class="fa fa-arrow-circle-right"></i>
+                </button>
+                <button class="btn btn-warning col mb-2" id="sas">sas</button>
+              </div>
+            </div>
+    </div>
+    <div class="container-fluid">
+      <header class="border border-primary" id="header">
+        header
+      </header>
+        <div class="row border border-success" id="content">
+          ho
+        </div>
+      <footer class="border border-primary" id="footer">
+        footer
+      </footer>
+    </div>
+    <div class="d-flex toggled" id="wrappere">
+            <div class="bg-warning" id="otra_barra">
+                <nav class="nav flex-column">
+                  <a class="nav-link" href="#"></a>
+                  <a class="nav-link" href="#"></a>
+                  <a class="nav-link" href="#"></a>
+                  <a class="nav-link" href="#"></a>
+                </nav>
+            </div>
+    </div>
     
+
+    <script src="jquery.js"></script>  
+
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+        $("#eder").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+        $("#sas").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+
 </body>
+
 </html>
